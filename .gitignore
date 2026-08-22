@@ -203,10 +203,22 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
-# Competition datasets, checkpoints, and generated outputs
-data/raw/
-data/prepared/
-weights/
+# Competition datasets, checkpoints, and generated outputs. The small official
+# sample and the two pinned baseline checkpoints are committed through Git LFS;
+# other datasets and weights remain local-only.
+data/raw/*
+!data/raw/sample/
+!data/raw/sample/**
+data/prepared/*
+!data/prepared/sample/
+!data/prepared/sample/**
+weights/*
+!weights/rfdetr/
+!weights/rtmdet/
+weights/rfdetr/*
+!weights/rfdetr/rf-detr-medium.pth
+weights/rtmdet/*
+!weights/rtmdet/rtmdet_m_8xb32-300e_coco_20220719_112220-229f527c.pth
 work_dirs/
 predictions/
 outputs/

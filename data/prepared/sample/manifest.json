@@ -1,0 +1,70 @@
+{
+  "source": "D:\\Object-Detection\\Object-Detection\\data\\raw\\sample",
+  "output": "D:\\Object-Detection\\Object-Detection\\data\\prepared\\sample",
+  "fusion": "yid",
+  "seed": 42,
+  "val_ratio": 0.2,
+  "min_valid_depth_mm": 300,
+  "max_depth_mm": 20000,
+  "classes": [
+    "person",
+    "boat",
+    "animal",
+    "seat",
+    "sign",
+    "bicycle",
+    "car",
+    "ball",
+    "light",
+    "garbage can",
+    "uav",
+    "tricycle"
+  ],
+  "sample_count": 18,
+  "train_ids": [
+    "00000008",
+    "000003_013_00000085",
+    "000004_014_00000001",
+    "000005_010_00000001",
+    "000005_011_00000421",
+    "000005_026_00000001",
+    "000005_028_00000163",
+    "000005_029_00000191",
+    "000008_012_00000151",
+    "000008_033_00000076",
+    "000014_002_suppl_00000167",
+    "000016_001_00000001",
+    "000016_042_suppl_00000164",
+    "000017_010_00000143"
+  ],
+  "valid_ids": [
+    "000004_013_00000081",
+    "000014_037_00000271",
+    "000014_051_suppl_00000341",
+    "000016"
+  ],
+  "box_counts": {
+    "person": 40,
+    "boat": 0,
+    "animal": 10,
+    "seat": 8,
+    "sign": 8,
+    "bicycle": 3,
+    "car": 8,
+    "ball": 0,
+    "light": 4,
+    "garbage can": 1,
+    "uav": 3,
+    "tricycle": 1
+  },
+  "channel_mean_0_255": [
+    106.45076693272006,
+    120.37558520472582,
+    119.48400089060246
+  ],
+  "channel_std_0_255": [
+    57.856641020467066,
+    57.701057515232726,
+    85.0907122296319
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "source": "D:\\Object-Detection\\Object-Detection\\data\\raw\\sample",
-  "output": "D:\\Object-Detection\\Object-Detection\\data\\prepared\\sample",
+  "source": "data/raw/sample",
+  "output": "data/prepared/sample",
   "fusion": "yid",
   "seed": 42,
   "val_ratio": 0.2,

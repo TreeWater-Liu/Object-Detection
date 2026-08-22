@@ -170,8 +170,10 @@ def main() -> None:
     channel_variance = np.maximum(channel_square_sum / pixel_count - np.square(channel_mean), 0.0)
     channel_std = np.sqrt(channel_variance)
 
+    # Keep the prepared dataset relocatable. RF-DETR resolves this path
+    # relative to data.yaml, so a clone works on any drive or OS.
     yaml_data = {
-        "path": output.as_posix(),
+        "path": ".",
         "train": "train/images",
         "val": "valid/images",
         "names": {index: name for index, name in enumerate(CLASS_NAMES)},
@@ -183,8 +185,8 @@ def main() -> None:
 
     class_box_counts = Counter(row[0] for rows in labels_by_id.values() for row in rows)
     manifest = {
-        "source": str(source),
-        "output": str(output),
+        "source": args.source.as_posix(),
+        "output": args.output.as_posix(),
         "fusion": args.fusion,
         "seed": args.seed,
         "val_ratio": args.val_ratio,

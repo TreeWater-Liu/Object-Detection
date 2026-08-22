@@ -1,4 +1,4 @@
-path: D:/Object-Detection/Object-Detection/data/prepared/sample
+path: .
 train: train/images
 val: valid/images
 names:

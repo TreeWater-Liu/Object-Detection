@@ -203,6 +203,14 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Competition datasets, checkpoints, and generated outputs
+data/raw/
+data/prepared/
+weights/
+work_dirs/
+predictions/
+outputs/
+
 # Ruff stuff:
 .ruff_cache/
 
